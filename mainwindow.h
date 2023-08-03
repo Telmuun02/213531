@@ -5,8 +5,12 @@
 #include <QWidget>
 #include <QTimer>
 #include <QResizeEvent>
+#include <QDesktopWidget>
+#include <QScreen>
+#include <QMessageBox>
 
 #include <paintscene.h>
+#include <point.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,13 +21,15 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
     public:
-        MainWindow(QWidget *parent = nullptr);
+        explicit MainWindow(QWidget *parent = nullptr);
         ~MainWindow();
+        void resizeWindow();
 
     private:
         Ui::MainWindow *ui;
         QTimer *timer;
         PaintScene *scene;
+        ClickPoint *point;
 
     private:
         void resizeEvent(QResizeEvent *event);

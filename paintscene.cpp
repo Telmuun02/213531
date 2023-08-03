@@ -1,9 +1,10 @@
 #include "paintscene.h"
+#include <iostream>
 
 PaintScene::PaintScene(QObject *parent) : QGraphicsScene(parent) {}
 
 PaintScene::~PaintScene() {}
-
+/*
 void PaintScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     int len = lines.length();
     QColor black = Qt::black;
@@ -62,6 +63,5 @@ void PaintScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
             );
         }
     }
-
-    previousPoint = event->scenePos();
 }
+*/
