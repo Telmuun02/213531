@@ -8,9 +8,25 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     scene = new PaintScene();
-    point = new ClickPoint(300, 300, 20, 20);
-    point->setBrush(Qt::blue);
-    scene->addItem(point);
+    ClickPoint *point_1 = new ClickPoint(300, 300, 20, 20);
+    point_1->setBrush(Qt::blue);
+    scene->addItem(point_1);
+
+    ClickPoint *point_2 = new ClickPoint(500, 440, 20, 20);
+    point_2->setBrush(Qt::blue);
+    scene->addItem(point_2);
+
+    ClickPoint *point_3 = new ClickPoint(700, 200, 20, 20);
+    point_3->setBrush(Qt::blue);
+    scene->addItem(point_3);
+
+    ClickPoint *point_4 = new ClickPoint(500, 740, 20, 20);
+    point_4->setBrush(Qt::blue);
+    scene->addItem(point_4);
+
+    ClickPoint *point_5 = new ClickPoint(100, 200, 20, 20);
+    point_5->setBrush(Qt::blue);
+    scene->addItem(point_5);
 
     ui->graphicsView->setScene(scene);
 

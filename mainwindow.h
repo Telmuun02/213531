@@ -29,7 +29,6 @@ class MainWindow : public QMainWindow
         Ui::MainWindow *ui;
         QTimer *timer;
         PaintScene *scene;
-        ClickPoint *point;
 
     private:
         void resizeEvent(QResizeEvent *event);
