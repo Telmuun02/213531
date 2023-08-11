@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="quit">assets/exit.png</file>
+        <file alias="new">assets/new.png</file>
+        <file alias="open">assets/open.png</file>
+        <file alias="save">assets/save.png</file>
+    </qresource>
+</RCC>

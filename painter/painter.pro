@@ -11,13 +11,17 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    paintscene.cpp \
-    point.cpp
+    menuwindow.cpp \
+    point.cpp \
+    scene.cpp \
+    screenwindow.cpp
 
 HEADERS += \
     mainwindow.h \
-    paintscene.h \
-    point.h
+    menuwindow.h \
+    point.h \
+    scene.h \
+    screenwindow.h
 
 FORMS += \
     mainwindow.ui
